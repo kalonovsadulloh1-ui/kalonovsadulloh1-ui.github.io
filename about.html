@@ -7,44 +7,43 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html">Kalonov Sadulloh</a>
-      <nav class="nav">
-        <a href="index.html">Bosh sahifa</a>
-        <a href="projects.html">Loyihalar</a>
-        <a href="about.html">Men haqimda</a>
-        <a href="contact.html" class="cta">Kontakt</a>
-      </nav>
-    </div>
+  <header class="site-header container">
+    <a class="logo" href="index.html">Kalonov Sadulloh</a>
+    <nav class="nav">
+      <a href="index.html">Bosh sahifa</a>
+      <a href="projects.html">Loyihalar</a>
+      <a href="about.html">Men haqimda</a>
+      <a href="contact.html">Kontakt</a>
+    </nav>
   </header>
 
-  <main class="container about">
+  <main class="container about-full">
     <h1>Men haqimda</h1>
-    <p>Ism: Kalonov Sadulloh</p>
-    <p>Tug‘ilgan: 16.12.2009 — Toshkent shahri</p>
-    <p>Yo‘nalish: Cybersecurity — HAAD TC</p>
-    <p>Sertifikatlar: 20+ (turli onlayn kurslar va treninglar)</p>
+    <div class="about-full-grid">
+      <div class="about-left">
+        <p><strong>Kalonov Sadulloh</strong> — HAAD TCda cybersecurity yo‘nalishini tamomlagan, tarmoqlar xavfsizligi va zaifliklarni aniqlash bo‘yicha ishlar qilgan yosh mutaxassis. 20+ sertifikatga ega.</p>
 
-    <h2>Ko‘nikmalar</h2>
-    <ul class="skill-list">
-      <li>Network Security</li>
-      <li>Web Vulnerability Assessment</li>
-      <li>Penetration Testing (basic)</li>
-      <li>Linux / Bash</li>
-      <li>Python</li>
-    </ul>
+        <h3>Ko‘nikmalar</h3>
+        <ul class="skill-list">
+          <li>Network Security</li>
+          <li>Web Vulnerability Assessment</li>
+          <li>Penetration Testing (basic)</li>
+          <li>Linux / Bash</li>
+          <li>Python</li>
+        </ul>
+      </div>
 
-    <div class="about-gallery">
-      <img src="assets/profile1.jpg" alt="Secondary photo" class="gallery-photo">
+      <aside class="about-right">
+        <img src="assets/photo_2026-01-27_12-36-55.jpg" alt="Kalonov secondary" class="about-photo">
+        <p class="muted">Agar bu rasmni o‘zgartirmoqchi bo‘lsangiz, assets ichidagi faylni almashtiring yoki yangi rasm yuklang.</p>
+      </aside>
     </div>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Kalonov Sadulloh</p>
-    </div>
+  <footer class="site-footer container">
+    <p>© 2026 Kalonov Sadulloh</p>
   </footer>
-  <script src="scripts/script.js"></script>
+
+  <script src="scripts/script.js" defer></script>
 </body>
 </html>
