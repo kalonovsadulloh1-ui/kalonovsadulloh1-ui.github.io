@@ -4,56 +4,134 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kalonov Sadulloh — Portfolio</title>
-  <meta name="description" content="Kalonov Sadulloh (16 yosh) — Cybersecurity (HAAD TC). 20+ sertifikatlar." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Kalonov Sadulloh — 16 yosh, Cybersecurity (HAAD TC). 20+ sertifikatlar."/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html">Kalonov Sadulloh</a>
-      <nav class="nav">
-        <a href="index.html">Bosh sahifa</a>
-        <a href="projects.html">Loyihalar</a>
-        <a href="about.html">Men haqimda</a>
-        <a href="contact.html" class="cta">Kontakt</a>
-        <a href="resume.pdf" target="_blank">Resume</a>
-      </nav>
-    </div>
+  <header class="site-header container">
+    <a class="logo" href="index.html">Kalonov Sadulloh</a>
+
+    <button class="nav-toggle" aria-label="menu" aria-expanded="false">☰</button>
+
+    <nav class="nav">
+      <a href="index.html">Bosh sahifa</a>
+      <a href="projects.html">Loyihalar</a>
+      <a href="about.html">Men haqimda</a>
+      <a href="contact.html">Kontakt</a>
+      <a class="btn small" href="resume.pdf" target="_blank">Resume</a>
+    </nav>
   </header>
 
   <main>
     <section class="hero container">
       <div class="hero-left">
-        <p class="eyebrow">Salom! Men —</p>
-        <h1 class="name">Kalonov Sadulloh</h1>
-        <p class="subtitle">16 yosh — Cybersecurity (HAAD TC). 20+ sertifikatlar.</p>
-        <ul class="meta-list">
-          <li>Tug‘ilgan joy: Toshkent sh., 16.12.2009</li>
-          <li>Yo‘nalish: Cybersecurity</li>
+        <p class="eyebrow">Salom, men —</p>
+        <h1 class="hero-title">Kalonov Sadulloh</h1>
+        <p class="hero-sub">16 yosh · Cybersecurity (HAAD TC) · 20+ sertifikatlar</p>
+
+        <div class="hero-actions">
+          <a class="btn" href="projects.html">Loyihalarim</a>
+          <a class="btn ghost" href="contact.html">Bog'lanish</a>
+        </div>
+
+        <ul class="stats">
+          <li><strong>16</strong><span>yosh</span></li>
+          <li><strong>20+</strong><span>sertifikatlar</span></li>
+          <li><strong>Toshkent</strong><span>tug‘ilgan</span></li>
         </ul>
-        <p class="actions">
-          <a href="projects.html" class="btn">Loyihalarimni ko‘rish</a>
-          <a href="contact.html" class="btn ghost">Bog‘lanish</a>
-        </p>
       </div>
 
       <div class="hero-right">
-        <!-- Siz yuklagan rasm nomiga moslang: quyida misol uchun birinchisini qo'ydim -->
-        <img id="profile-photo" src="assets/photo_2026-01-27_12-36-58.jpg" alt="Profile photo">
+        <div class="profile-frame">
+          <!-- Default profil: assets/photo_2026-01-27_12-36-58.jpg (siz yuklagan) -->
+          <img id="profile-photo" src="assets/photo_2026-01-27_12-36-58.jpg" alt="Kalonov Sadulloh">
+          <div class="profile-switch">
+            <button onclick="useProfileImage(1)" title="Rasm 1">1</button>
+            <button onclick="useProfileImage(2)" title="Rasm 2">2</button>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="intro" class="container">
-      <h2>Qisqacha</h2>
-      <p>HAAD TCda cybersecurity yo‘nalishini tamomlaganman, 20+ sertifikatlar, tarmoqlar xavfsizligi va CTF muammolariga qiziqaman.</p>
+    <section id="projects-preview" class="container projects-preview">
+      <h2>So'nggi ishlanmalar</h2>
+      <p class="muted">Misol loyihalar — haqiqiy screenshotlaringizni yuborsangiz ularni qo‘shaman.</p>
+
+      <div class="grid">
+        <article class="card">
+          <img data-src="https://images.unsplash.com/photo-1555949963-aa79dcee981d?q=80&w=1200&auto=format&fit=crop" alt="Project 1 screenshot" loading="lazy">
+          <div class="card-body">
+            <h3>Network Security Audit (sample)</h3>
+            <p class="muted">Audit va zaifliklarni tahlil qilish — misol.</p>
+            <p class="tags"><span>Security</span><span>Audit</span></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img data-src="https://images.unsplash.com/photo-1559757175-a577a3a8a8b9?q=80&w=1200&auto=format&fit=crop" alt="Project 2 screenshot" loading="lazy">
+          <div class="card-body">
+            <h3>CTF Writeups</h3>
+            <p class="muted">Web, crypto va reversing misollari.</p>
+            <p class="tags"><span>CTF</span><span>Pwn</span></p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img data-src="https://images.unsplash.com/photo-1548092372-0a8a0d1f6d9e?q=80&w=1200&auto=format&fit=crop" alt="Project 3 screenshot" loading="lazy">
+          <div class="card-body">
+            <h3>Sertifikatlar to'plami</h3>
+            <p class="muted">20+ kurs va sertifikatlar — ro'yxat.</p>
+            <p class="tags"><span>Certificates</span><span>Training</span></p>
+          </div>
+        </article>
+      </div>
+      <p class="center"><a class="btn ghost" href="projects.html">Barcha loyihalar</a></p>
+    </section>
+
+    <section id="about" class="container about-section">
+      <h2>Men haqimda</h2>
+      <div class="about-grid">
+        <div>
+          <p>Ism: <strong>Kalonov Sadulloh</strong></p>
+          <p>Tug‘ilgan: <strong>16.12.2009</strong> — Toshkent shahri</p>
+          <p>Yo‘nalish: <strong>Cybersecurity</strong> (HAAD TC)</p>
+          <p>Sertifikatlar: <strong>20+</strong></p>
+          <p>Maqsad: tarmoq xavfsizligini mustahkamlash va CTF bo‘yicha o‘sish.</p>
+          <p><a class="btn" href="about.html">Batafsil</a></p>
+        </div>
+        <div class="about-visual">
+          <img src="https://images.unsplash.com/photo-1526378721657-515d7a2a7c4b?q=80&w=1200&auto=format&fit=crop" alt="About visual" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container contact-section">
+      <h2>Kontakt</h2>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h4>Email</h4>
+          <p><a href="mailto:kalonovsadulloh1@gmail.com">kalonovsadulloh1@gmail.com</a></p>
+          <button id="copy-email" class="small">Emailni nusxalash</button>
+        </div>
+        <div class="contact-card">
+          <h4>Telefon</h4>
+          <p><a href="tel:+998880981612">+998 88 098 16 12</a></p>
+          <p class="muted">Ish va hamkorlik uchun ochiqman.</p>
+        </div>
+      </div>
+
+      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label>Ism <input type="text" name="name" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Xabar <textarea name="message" rows="4" required></textarea></label>
+        <button class="btn" type="submit">Yuborish</button>
+      </form>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Kalonov Sadulloh — <a href="mailto:kalonovsadulloh1@gmail.com">kalonovsadulloh1@gmail.com</a> — <a href="tel:+998880981612">+998 88 098 16 12</a></p>
-    </div>
+  <footer class="site-footer container">
+    <p>© 2026 Kalonov Sadulloh — <a href="mailto:kalonovsadulloh1@gmail.com">kalonovsadulloh1@gmail.com</a></p>
   </footer>
 
   <script src="scripts/script.js" defer></script>
