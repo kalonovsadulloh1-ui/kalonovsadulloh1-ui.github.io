@@ -7,21 +7,18 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html">Kalonov Sadulloh</a>
-      <nav class="nav">
-        <a href="index.html">Bosh sahifa</a>
-        <a href="projects.html">Loyihalar</a>
-        <a href="about.html">Men haqimda</a>
-        <a href="contact.html" class="cta">Kontakt</a>
-      </nav>
-    </div>
+  <header class="site-header container">
+    <a class="logo" href="index.html">Kalonov Sadulloh</a>
+    <nav class="nav">
+      <a href="index.html">Bosh sahifa</a>
+      <a href="projects.html">Loyihalar</a>
+      <a href="about.html">Men haqimda</a>
+      <a href="contact.html">Kontakt</a>
+    </nav>
   </header>
 
-  <main class="container contact">
+  <main class="container">
     <h1>Kontakt</h1>
-    <p class="muted">Bog‘lanish uchun email yoki telefon orqali murojaat qiling:</p>
 
     <div class="contact-grid">
       <div class="contact-card">
@@ -35,19 +32,18 @@
     </div>
 
     <h2>Kontakt formasi</h2>
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+    <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
       <label>Ism <input type="text" name="name" required></label>
       <label>Email <input type="email" name="email" required></label>
       <label>Xabar <textarea name="message" rows="5" required></textarea></label>
-      <button type="submit" class="btn">Yuborish</button>
+      <button class="btn" type="submit">Yuborish</button>
     </form>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Kalonov Sadulloh</p>
-    </div>
+  <footer class="site-footer container">
+    <p>© 2026 Kalonov Sadulloh</p>
   </footer>
-  <script src="scripts/script.js"></script>
+
+  <script src="scripts/script.js" defer></script>
 </body>
 </html>
