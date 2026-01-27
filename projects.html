@@ -7,57 +7,57 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="logo" href="index.html">Kalonov Sadulloh</a>
-      <nav class="nav">
-        <a href="index.html">Bosh sahifa</a>
-        <a href="projects.html">Loyihalar</a>
-        <a href="about.html">Men haqimda</a>
-        <a href="contact.html" class="cta">Kontakt</a>
-      </nav>
-    </div>
+  <header class="site-header container">
+    <a class="logo" href="index.html">Kalonov Sadulloh</a>
+    <button class="nav-toggle" aria-label="menu">☰</button>
+    <nav class="nav">
+      <a href="index.html">Bosh sahifa</a>
+      <a href="projects.html">Loyihalar</a>
+      <a href="about.html">Men haqimda</a>
+      <a href="contact.html">Kontakt</a>
+    </nav>
   </header>
 
   <main class="container">
-    <section class="projects">
+    <section class="projects-page">
       <h1>Loyihalar</h1>
-      <p class="muted">Quyida misol loyihalar keltirilgan. Haqiqiy screenshotslarni yuborsangiz ularni joylayman.</p>
+      <p class="muted">Har bir loyiha uchun screenshot/description va stack ko‘rsatiladi. Haqiqiy ishlanmalar screenshotslarini yuboring — men ularni joylayman.</p>
 
       <div class="grid">
         <article class="card">
-          <img src="assets/project-1.jpg" alt="Project 1 screenshot">
+          <img data-src="https://images.unsplash.com/photo-1555949963-aa79dcee981d?q=80&w=1400&auto=format&fit=crop" alt="Project 1" loading="lazy">
           <div class="card-body">
-            <h3>Cybersecurity Audit — Sample</h3>
-            <p>Tarmoq xavfsizligi bo‘yicha audit va zaifliklarni tahlil qilish (namuna).</p>
+            <h3>Network Audit — namuna</h3>
+            <p class="muted">Tarmoq va firewall audit, zaifliklarni aniqlash.</p>
+            <p class="tags"><span>Security</span><span>Audit</span></p>
           </div>
         </article>
 
         <article class="card">
-          <img src="assets/project-2.jpg" alt="Project 2 screenshot">
+          <img data-src="https://images.unsplash.com/photo-1559757175-a577a3a8a8b9?q=80&w=1400&auto=format&fit=crop" alt="Project 2" loading="lazy">
           <div class="card-body">
-            <h3>CTF Challenges</h3>
-            <p>CTF muammolari bo‘yicha misollar: web, crypto va reversing.</p>
+            <h3>CTF Writeups</h3>
+            <p class="muted">Web va crypto challenge writeup.</p>
+            <p class="tags"><span>CTF</span><span>Writeup</span></p>
           </div>
         </article>
 
         <article class="card">
-          <img src="assets/project-3.jpg" alt="Certificates overview">
+          <img data-src="https://images.unsplash.com/photo-1548092372-0a8a0d1f6d9e?q=80&w=1400&auto=format&fit=crop" alt="Certificates" loading="lazy">
           <div class="card-body">
-            <h3>Sertifikatlar</h3>
-            <p>20+ sertifikatlar, kurslar va treninglar ro‘yxati.</p>
+            <h3>Sertifikatlar to'plami</h3>
+            <p class="muted">20+ kurs va sertifikatlar ro'yxati.</p>
+            <p class="tags"><span>Certificates</span></p>
           </div>
         </article>
       </div>
-
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2026 Kalonov Sadulloh</p>
-    </div>
+  <footer class="site-footer container">
+    <p>© 2026 Kalonov Sadulloh</p>
   </footer>
-  <script src="scripts/script.js"></script>
+
+  <script src="scripts/script.js" defer></script>
 </body>
 </html>
