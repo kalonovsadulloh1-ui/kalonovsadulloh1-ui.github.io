@@ -1,63 +1,64 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Loyihalar — Kalonov Sadulloh</title>
-  <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Kalonov Sadulloh</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header class="site-header container">
-    <a class="logo" href="index.html">Kalonov Sadulloh</a>
-    <button class="nav-toggle" aria-label="menu">☰</button>
-    <nav class="nav">
-      <a href="index.html">Bosh sahifa</a>
-      <a href="projects.html">Loyihalar</a>
-      <a href="about.html">Men haqimda</a>
-      <a href="contact.html">Kontakt</a>
-    </nav>
+  <div class="bg-anim"></div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span>Kalonov Sadulloh</span>
+        <span class="badge">Projects</span>
+      </div>
+      <nav class="menu">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="certificates.html">Certificates</a>
+        <a data-nav href="projects.html">Projects</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="container">
-    <section class="projects-page">
-      <h1>Loyihalar</h1>
-      <p class="muted">Har bir loyiha uchun screenshot/description va stack ko‘rsatiladi. Haqiqiy ishlanmalar screenshotslarini yuboring — men ularni joylayman.</p>
+  <main class="container" style="padding:26px 0 56px">
+    <div class="card card-pad reveal">
+      <h1 class="h1" style="font-size:30px;margin-bottom:8px">Projects 🚀</h1>
+      <p class="sub">Bu yerga qilgan lab/CTF/portfolio loyihalaringizni yozasiz.</p>
 
-      <div class="grid">
-        <article class="card">
-          <img data-src="https://images.unsplash.com/photo-1555949963-aa79dcee981d?q=80&w=1400&auto=format&fit=crop" alt="Project 1" loading="lazy">
-          <div class="card-body">
-            <h3>Network Audit — namuna</h3>
-            <p class="muted">Tarmoq va firewall audit, zaifliklarni aniqlash.</p>
-            <p class="tags"><span>Security</span><span>Audit</span></p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img data-src="https://images.unsplash.com/photo-1559757175-a577a3a8a8b9?q=80&w=1400&auto=format&fit=crop" alt="Project 2" loading="lazy">
-          <div class="card-body">
-            <h3>CTF Writeups</h3>
-            <p class="muted">Web va crypto challenge writeup.</p>
-            <p class="tags"><span>CTF</span><span>Writeup</span></p>
-          </div>
-        </article>
-
-        <article class="card">
-          <img data-src="https://images.unsplash.com/photo-1548092372-0a8a0d1f6d9e?q=80&w=1400&auto=format&fit=crop" alt="Certificates" loading="lazy">
-          <div class="card-body">
-            <h3>Sertifikatlar to'plami</h3>
-            <p class="muted">20+ kurs va sertifikatlar ro'yxati.</p>
-            <p class="tags"><span>Certificates</span></p>
-          </div>
-        </article>
+      <div class="grid" style="padding-bottom:6px">
+        <div class="mini reveal">
+          <h3>🔐 Project 1</h3>
+          <p>Qisqa tavsif: nima qildingiz, nima o‘rgandingiz, natija.</p>
+        </div>
+        <div class="mini reveal">
+          <h3>🕵️ Project 2</h3>
+          <p>Qisqa tavsif: tools / method / outcome.</p>
+        </div>
+        <div class="mini reveal">
+          <h3>🧪 Project 3</h3>
+          <p>Qisqa tavsif: security lab / writeup / report.</p>
+        </div>
       </div>
-    </section>
+
+      <hr class="hr" />
+      <h2 class="section-title">Public visuals 🌃</h2>
+      <div class="gallery" style="margin-top:12px">
+        <img class="gimg" src="https://source.unsplash.com/600x400/?computer,security" alt="p1">
+        <img class="gimg" src="https://source.unsplash.com/600x400/?server,room" alt="p2">
+        <img class="gimg" src="https://source.unsplash.com/600x400/?coding,night" alt="p3">
+        <img class="gimg" src="https://source.unsplash.com/600x400/?cyber,abstract" alt="p4">
+      </div>
+    </div>
   </main>
 
-  <footer class="site-footer container">
-    <p>© 2026 Kalonov Sadulloh</p>
-  </footer>
-
-  <script src="scripts/script.js" defer></script>
+  <footer class="footer">© <span id="y"></span> Kalonov Sadulloh</footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
