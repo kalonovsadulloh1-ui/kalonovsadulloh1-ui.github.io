@@ -1,49 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="uz">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Men haqimda — Kalonov Sadulloh</title>
-  <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Kalonov Sadulloh</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header class="site-header container">
-    <a class="logo" href="index.html">Kalonov Sadulloh</a>
-    <nav class="nav">
-      <a href="index.html">Bosh sahifa</a>
-      <a href="projects.html">Loyihalar</a>
-      <a href="about.html">Men haqimda</a>
-      <a href="contact.html">Kontakt</a>
-    </nav>
+  <div class="bg-anim"></div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <span class="brand-dot"></span>
+        <span>Kalonov Sadulloh</span>
+        <span class="badge">About</span>
+      </div>
+      <nav class="menu">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="certificates.html">Certificates</a>
+        <a data-nav href="projects.html">Projects</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main class="container about-full">
-    <h1>Men haqimda</h1>
-    <div class="about-full-grid">
-      <div class="about-left">
-        <p><strong>Kalonov Sadulloh</strong> — HAAD TCda cybersecurity yo‘nalishini tamomlagan, tarmoqlar xavfsizligi va zaifliklarni aniqlash bo‘yicha ishlar qilgan yosh mutaxassis. 20+ sertifikatga ega.</p>
+  <main class="container" style="padding:26px 0 56px">
+    <div class="card card-pad reveal">
+      <h1 class="h1" style="font-size:30px;margin-bottom:8px">Men haqimda 👤</h1>
+      <p class="sub">
+        Men <b>Kalonov Sadulloh</b>. Toshkentda tug‘ilganman (16.12.2009). Cybersecurity yo‘nalishini (TC) tugatganman
+        va 20+ sertifikatlarim bor.
+      </p>
 
-        <h3>Ko‘nikmalar</h3>
-        <ul class="skill-list">
-          <li>Network Security</li>
-          <li>Web Vulnerability Assessment</li>
-          <li>Penetration Testing (basic)</li>
-          <li>Linux / Bash</li>
-          <li>Python</li>
-        </ul>
+      <div class="profile" style="margin-top:14px">
+        <img class="pimg" src="assets/img/me-2.jpg" alt="about photo" />
+        <img class="pimg" src="assets/img/me-1.jpg" alt="about photo 2" />
       </div>
 
-      <aside class="about-right">
-        <img src="assets/photo_2026-01-27_12-36-55.jpg" alt="Kalonov secondary" class="about-photo">
-        <p class="muted">Agar bu rasmni o‘zgartirmoqchi bo‘lsangiz, assets ichidagi faylni almashtiring yoki yangi rasm yuklang.</p>
-      </aside>
+      <hr class="hr" />
+
+      <h2 class="section-title">Focus 🎯</h2>
+      <div class="list">
+        <div class="item"><b>🛡️ Web security</b><span>OWASP basics, common vuln’lar, test mindset</span></div>
+        <div class="item"><b>🌐 Networking</b><span>TCP/IP, services, traffic concept, troubleshooting</span></div>
+        <div class="item"><b>🔎 Blue team</b><span>Logika, monitoring, basic incident flow</span></div>
+      </div>
+
+      <hr class="hr" />
+
+      <h2 class="section-title">Public aesthetic (vibe) 🖼️</h2>
+      <p class="small">Sayt jonli ko‘rinsin deb qo‘shdim.</p>
+      <div class="gallery" style="margin-top:12px">
+        <img class="gimg" src="https://source.unsplash.com/600x400/?security,datacenter" alt="public a">
+        <img class="gimg" src="https://source.unsplash.com/600x400/?laptop,code" alt="public b">
+        <img class="gimg" src="https://source.unsplash.com/600x400/?matrix,neon" alt="public c">
+        <img class="gimg" src="https://source.unsplash.com/600x400/?city,night" alt="public d">
+      </div>
     </div>
   </main>
 
-  <footer class="site-footer container">
-    <p>© 2026 Kalonov Sadulloh</p>
-  </footer>
-
-  <script src="scripts/script.js" defer></script>
+  <footer class="footer">© <span id="y"></span> Kalonov Sadulloh</footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
