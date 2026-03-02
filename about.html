@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="About Sadulloh Kalonov — Junior Pentester. Skills, experience, and certifications." />
+  <title>About | Sadulloh Kalonov</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="top-glow" aria-hidden="true"></div>
+  <div class="grid-noise" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <div class="brand-badge" aria-hidden="true"></div>
+        <div><h1>SADULLOH KALONOV</h1><p>Junior Pentester</p></div>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="services.html">Services</a>
+        <a data-nav href="portfolio.html">Portfolio</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-btn" data-menu aria-expanded="false" aria-controls="mobileNav">Menu</button>
+    </div>
+    <div class="container mobile" id="mobileNav" data-mobile>
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h3 class="reveal">About</h3>
+      <div class="card reveal" style="padding:18px;">
+        <p class="hero-sub" style="max-width:none;margin:0;">
+          I am a Junior Pentester based in Tashkent, Uzbekistan. I conduct detailed security evaluations using
+          Metasploit, Burp Suite, and Wireshark, engage clients to understand their needs, and provide actionable
+          recommendations that improve overall security posture. I also support security awareness training and
+          continuous framework improvements.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3 class="reveal">Skills</h3>
+      <div class="card reveal" style="padding:18px;" data-skills>
+        <div class="skills">
+          <div class="skill">
+            <div class="skill-top"><b>Security Training</b><span>82%</span></div>
+            <div class="bar"><span data-w="82"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><b>Data Protection</b><span>80%</span></div>
+            <div class="bar"><span data-w="80"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><b>Wireshark</b><span>76%</span></div>
+            <div class="bar"><span data-w="76"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><b>Network Security</b><span>78%</span></div>
+            <div class="bar"><span data-w="78"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><b>Burp Suite</b><span>72%</span></div>
+            <div class="bar"><span data-w="72"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><b>Metasploit</b><span>70%</span></div>
+            <div class="bar"><span data-w="70"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><b>Penetration Testing</b><span>85%</span></div>
+            <div class="bar"><span data-w="85"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><b>Reporting & Recommendations</b><span>83%</span></div>
+            <div class="bar"><span data-w="83"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3 class="reveal">Certifications</h3>
+      <div class="section card reveal" style="padding:18px;">
+        <div class="tile" style="margin-bottom:12px;">
+          <h4>Core Certifications</h4>
+          <p><b>CRTA</b>, <b>ISC2</b>, <b>ICIP</b>, <b>WEB-RTA</b>, <b>AD-RTS</b>, <b>CRT-COI</b></p>
+          <span class="tag">Industry-aligned</span>
+        </div>
+
+        <div class="tile">
+          <h4>Additional Credentials</h4>
+          <p>20+ professional certificates demonstrating continuous learning and hands-on capability.</p>
+          <span class="tag">Always improving 🚀</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3 class="reveal">Languages</h3>
+      <div class="section card reveal" style="padding:18px;">
+        <div class="skills" data-skills>
+          <div class="skill">
+            <div class="skill-top"><b>Uzbek</b><span>Native</span></div>
+            <div class="bar"><span data-w="100"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><b>English</b><span>Intermediate</span></div>
+            <div class="bar"><span data-w="65"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><b>Russian</b><span>Beginner</span></div>
+            <div class="bar"><span data-w="35"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill-top"><b>Turkish</b><span>Beginner</span></div>
+            <div class="bar"><span data-w="30"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>© <span id="y"></span> Sadulloh Kalonov</div>
+        <div class="social">
+          <a href="portfolio.html">Projects ⚡</a>
+          <a href="contact.html">Contact ✉️</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
