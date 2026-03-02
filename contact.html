@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Contact Sadulloh Kalonov — Junior Pentester." />
+  <title>Contact | Sadulloh Kalonov</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="top-glow" aria-hidden="true"></div>
+  <div class="grid-noise" aria-hidden="true"></div>
+
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html"><div class="brand-badge"></div><div><h1>SADULLOH KALONOV</h1><p>Junior Pentester</p></div></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a data-nav href="index.html">Home</a>
+        <a data-nav href="about.html">About</a>
+        <a data-nav href="services.html">Services</a>
+        <a data-nav href="portfolio.html">Portfolio</a>
+        <a data-nav href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-btn" data-menu aria-expanded="false" aria-controls="mobileNav">Menu</button>
+    </div>
+    <div class="container mobile" id="mobileNav" data-mobile>
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <h3 class="reveal">Contact</h3>
+
+      <div class="hero-grid">
+        <div class="card reveal" style="padding:18px;">
+          <h3 style="margin-top:0;">Send a message ✉️</h3>
+          <!-- Static site: use mailto (no backend needed) -->
+          <form class="form" id="contactForm">
+            <input class="input" id="name" placeholder="Your name" required />
+            <input class="input" id="email" type="email" placeholder="Your email" required />
+            <textarea class="input" id="msg" placeholder="Your message" required></textarea>
+            <button class="btn primary" type="submit">Send via Email ⚡</button>
+            <p class="helper">This form opens your email app (no server). For a real backend, connect Formspree/Netlify Forms later.</p>
+          </form>
+        </div>
+
+        <aside class="card reveal" style="padding:18px;">
+          <h3 style="margin-top:0;">Direct</h3>
+          <div class="meta">
+            <div class="meta-item"><span>Email</span><b>kalonovsadulloh@gmail.com</b></div>
+            <div class="meta-item"><span>Phone</span><b>+880981612</b></div>
+            <div class="meta-item"><span>Location</span><b>Tashkent, Uzbekistan</b></div>
+          </div>
+
+          <div class="tile" style="margin-top:12px;">
+            <h4>Social</h4>
+            <p class="helper">Add your links here (Telegram / GitHub / LinkedIn).</p>
+            <div class="social">
+              <a href="#" aria-label="GitHub">GitHub 🧩</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn 💼</a>
+              <a href="#" aria-label="Telegram">Telegram 📩</a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div>© <span id="y"></span> Sadulloh Kalonov</div>
+        <div class="social">
+          <a href="portfolio.html">Projects ⚡</a>
+          <a href="about.html">About 👤</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // mailto submit
+    document.getElementById('contactForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = encodeURIComponent(document.getElementById('name').value.trim());
+      const email = encodeURIComponent(document.getElementById('email').value.trim());
+      const msg = encodeURIComponent(document.getElementById('msg').value.trim());
+
+      const subject = encodeURIComponent(`Portfolio contact from ${decodeURIComponent(name)}`);
+      const body = encodeURIComponent(`Name: ${decodeURIComponent(name)}\nEmail: ${decodeURIComponent(email)}\n\nMessage:\n${decodeURIComponent(msg)}`);
+
+      window.location.href = `mailto:kalonovsadulloh@gmail.com?subject=${subject}&body=${body}`;
+    });
+  </script>
+</body>
+</html>
